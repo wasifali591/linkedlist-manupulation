@@ -12,15 +12,24 @@ public class LinkedListBasic {
         ll.addLast("C");
         ll.addFirst("D");
         ll.add("E");
+        ll.set(1, "G");
 
         System.out.println(ll);
 
-        ll.remove("B");
-        ll.remove(3);
-        ll.removeFirst();
-        ll.removeLast();
+        // ll.remove("B");
+        // ll.remove(3);
+        // ll.removeFirst();
+        // ll.removeLast();
+        for (String str : ll) {
+            System.out.print(str + " ");
+        }
 
-        System.out.println(ll);
+        Object[] arr = ll.toArray();
+        for(Object element: arr){
+            System.out.print(element + " ");
+        }
+
+        System.out.println("Size: " + ll.size());
     }
 
 }
